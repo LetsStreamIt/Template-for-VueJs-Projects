@@ -3,7 +3,7 @@ run-name: ${{ github.repository }} Deploy Documentation
 on:
   # trigger deployment on every push to main branch
   push:
-    branches: ["main"]
+    branches: ['main']
   # trigger deployment manually
   workflow_dispatch:
 

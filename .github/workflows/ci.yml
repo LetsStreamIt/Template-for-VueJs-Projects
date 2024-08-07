@@ -3,7 +3,7 @@ run-name: ${{ github.repository }} Build
 on:
   pull_request:
     branches:
-      - "*"
+      - '*'
   workflow_call:
 
 jobs:
