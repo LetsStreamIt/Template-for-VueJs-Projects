@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "preview": "vite preview",
     "test:unit": "vitest",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
@@ -20,12 +22,15 @@
     "@vitejs/plugin-vue": "^5.0.5",
     "@vue/eslint-config-prettier": "^9.0.0",
     "@vue/test-utils": "^2.4.6",
+    "@vuepress/bundler-vite": "^2.0.0-rc.14",
+    "@vuepress/theme-default": "^2.0.0-rc.40",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
     "jsdom": "^24.1.0",
     "prettier": "^3.2.5",
     "semantic-release-preconfigured-conventional-commits": "^1.1.95",
     "vite": "^5.3.1",
-    "vitest": "^1.6.0"
+    "vitest": "^1.6.0",
+    "vuepress": "^2.0.0-rc.14"
   }
 }
