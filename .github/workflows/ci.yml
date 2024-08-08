@@ -39,4 +39,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Check code format
-        run: npx prettier . --check
+        run: npm format:check
+  
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: DanySK/action-checkout@0.2.19
+      - uses: actions/setup-node@v4.0.3
+        with:
+          cache: npm
+          node-version: lts/*
+      - name: Install dependencies
+        run: npm ci
+      - name: Run ESLint
+        run: npm lint:check
+  
+

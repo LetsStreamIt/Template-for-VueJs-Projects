@@ -10,8 +10,10 @@
     "docs:build": "vuepress build docs",
     "preview": "vite preview",
     "test:unit": "vitest",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "lint:check": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --ignore-path .gitignore",
+    "format:write": "prettier --write src/",
+    "format:check": "prettier --check src/"
   },
   "dependencies": {
     "vue": "^3.4.29",
