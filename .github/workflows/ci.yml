@@ -39,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Check code format
-        run: npm format:check
+        run: npm run format:check
   
   linter:
     runs-on: ubuntu-latest
@@ -53,6 +53,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run ESLint
-        run: npm lint:check
+        run: npm run lint:check
   
 
