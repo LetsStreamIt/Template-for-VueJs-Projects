@@ -1,41 +1,51 @@
-# template-for-vuejs-projects
+# Template-for-VueJs-Projects
+This is a template repository for kickstarting the development of VueJs projects
+## Usage
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
+### Dependencies
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
+### Run the project in Dev mode
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
-
+### Run Unit Tests using [Vitest](https://vitest.dev/)
 ```sh
-npm run build
+npm run test
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Code formatting with [Prettier](https://prettier.io/)
 
+#### Check code format
 ```sh
-npm run test:unit
+npm run format:check
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
+#### Format code
 ```sh
-npm run lint
+npm run format:write
 ```
+
+### Code linting with [ESLINT](https://eslint.org/)
+
+#### Check for code errors
+```sh
+npm run lint:check
+```
+
+#### Correct code from errors
+```sh
+npm run lint:fix
+```
+## Git Hooks
+
+The template comprises also two Git hooks,  if at least one of these fails, a Git commit is not produced:
+- `pre-commit` hook verifies that tests, code format and linter checks complete successfully before applying the commit;
+- `commit-msg` ensures that the commit message follows the [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) specification.
+
+## CI/CD
+
+Navigate to the *Let's Stream It* report to see the details of the CI/CD pipeline: [Report link](https://letsstreamit.github.io/documentation/report/devops/#version-control).
