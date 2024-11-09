@@ -9,17 +9,20 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "preview": "vite preview",
-    "test:unit": "vitest",
-    "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "lint:check": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --ignore-path .gitignore",
+    "lint:fix": "eslint src/ --fix",
+    "lint:check": "eslint src/",
     "format:write": "prettier --write src/",
-    "format:check": "prettier --check src/"
+    "format:check": "prettier --check src/",
+    "prepare": "husky"
   },
   "dependencies": {
+    "husky": "^9.1.6",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@rushstack/eslint-patch": "^1.8.0",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vue/eslint-config-prettier": "^10.0.0",
