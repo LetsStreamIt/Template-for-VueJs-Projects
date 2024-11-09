@@ -89,7 +89,7 @@ jobs:
           cache: npm
           node-version: lts/*
       - run: npm clean-install
-      - name: Build Typedoc site
+      - name: Build VuePress site
         run: npm run docs:build
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
