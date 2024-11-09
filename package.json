@@ -8,6 +8,7 @@
     "build": "vite build",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
+    "test": "vitest",
     "preview": "vite preview",
     "lint:fix": "eslint src/ --fix",
     "lint:check": "eslint src/",
