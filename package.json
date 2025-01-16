@@ -30,7 +30,7 @@
     "@vue/test-utils": "^2.4.6",
     "@vuepress/bundler-vite": "^2.0.0-rc.14",
     "@vuepress/theme-default": "^2.0.0-rc.40",
-    "eslint": "^8.57.0",
+    "eslint": "^9.0.0",
     "eslint-plugin-vue": "^9.23.0",
     "jsdom": "^26.0.0",
     "prettier": "^3.2.5",
